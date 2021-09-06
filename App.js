@@ -5,11 +5,15 @@ import {
   Text,
   View,
 } from 'react-native';
+import Body from './components/Body';
 import Header from './components/Header';
 
 const App = () => {
   return (
-    <Header />
+    <View style={{ flex: 1 }}>
+      <Header />
+      <Body />
+    </View>
   )
 };
 

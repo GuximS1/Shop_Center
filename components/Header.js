@@ -14,7 +14,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 const Header = () => {
 
     return (
-        <View style={{ maxHeight: '20%', margin: 10, marginTop: '5%', flex: 1, flexDirection: 'row', }}>
+        <View style={{ maxHeight: '20%', margin: 10, marginTop: '5%', flex: 1, flexDirection: 'row' }}>
             <TouchableOpacity style={{ width: 20, marginLeft: '2%', height: 30 }} onPress={() => { Alert.alert("You pressed the menu!") }}>
                 <FontAwesome5 name="bars" size={25} color={'#3d3d3d'} >
                 </FontAwesome5>
