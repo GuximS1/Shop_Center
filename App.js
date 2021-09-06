@@ -4,16 +4,17 @@ import {
   StyleSheet,
   Text,
   View,
+  ScrollView
 } from 'react-native';
 import Body from './components/Body';
 import Header from './components/Header';
-
+import { CardEcomOne } from 'react-native-card-ui';
 const App = () => {
   return (
-    <View style={{ flex: 1 }}>
+    <ScrollView style={{ backgroundColor: 'white' }}>
       <Header />
       <Body />
-    </View>
+    </ScrollView>
   )
 };
 
