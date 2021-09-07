@@ -11,11 +11,15 @@ import {
 } from 'react-native';
 import { isRequired } from 'react-native/Libraries/DeprecatedPropTypes/DeprecatedColorPropType';
 import { CardTen } from 'react-native-card-ui';
-
+import { SliderBox } from "react-native-image-slider-box";
 const Body = () => {
+    var myState = [
+        require('../images/Promotion2.jpg'),
+        require('../images/Promotion3.jpg'),
+        require('../images/Promotion1.jpg')]
     return (
         <View style={{ marginTop: '10%' }}>
-            <Image source={require("../images/Promotion2.jpg")} style={{ maxWidth: '120%', height: 250 }} />
+            <SliderBox images={myState} activeOpacity={1} />
             <Text style={{ fontWeight: 'bold', fontSize: 20, marginLeft: '5%', marginTop: '8%', color: '#3d3d3d' }}>The most interesting</Text>
             <View style={{ marginTop: '15%', flex: 1, flexDirection: 'row', }}>
                 <CardTen
