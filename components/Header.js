@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
     StyleSheet,
@@ -7,10 +7,12 @@ import {
     View,
     TouchableOpacity,
     Alert,
-    Image
+    Image,
 } from 'react-native';
+
 import SearchBar from "react-native-dynamic-search-bar";
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+
 const Header = () => {
 
     return (
@@ -41,6 +43,7 @@ const Header = () => {
                 style={{ marginTop: '2%', width: '92%', height: 55, backgroundColor: '#CECECE', }}
             //https://www.npmjs.com/package/react-native-dynamic-search-bar
             />
+
         </View>
     );
 }
