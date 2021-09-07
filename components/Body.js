@@ -17,6 +17,10 @@ const Body = () => {
         require('../images/Promotion2.jpg'),
         require('../images/Promotion3.jpg'),
         require('../images/Promotion1.jpg')]
+    var myState1 = [
+        require('../images/Watches1.jpg'),
+        require('../images/Watches2.jpg'),
+        require('../images/Watches3.jpg')]
     return (
         <View style={{ marginTop: '10%' }}>
             <SliderBox images={myState} activeOpacity={1} />
@@ -62,9 +66,7 @@ const Body = () => {
                     width={160}
                 />
             </View>
-
-
-
+            <SliderBox images={myState1} activeOpacity={1} />
 
         </View>
     );
