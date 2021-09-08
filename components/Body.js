@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-
+//https://www.npmjs.com/package/react-native-animated-view-slider
 import {
     StyleSheet,
     Text,
@@ -67,7 +67,6 @@ const Body = () => {
                 />
             </View>
             <SliderBox images={myState1} activeOpacity={1} />
-
         </View>
     );
 }
