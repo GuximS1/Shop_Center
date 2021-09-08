@@ -32,6 +32,30 @@ const App = () => {
       icon: 'barbell',
       type: 'ionicon',
       color: '#796E31'
+    },
+    {
+      title: 'Automobiles & Motorcycles',
+      icon: 'car',
+      type: 'ionicon',
+      color: '#00A00D'
+    },
+    {
+      title: 'Cameras',
+      icon: 'camera',
+      type: 'ionicon',
+      color: '#370C3D'
+    },
+    {
+      title: 'Home & Kitchen',
+      icon: 'home',
+      type: 'ionicon',
+      color: '#FF0000'
+    },
+    {
+      title: 'Watches',
+      icon: 'watch',
+      type: 'ionicon',
+      color: '#C5A803'
     }
   ]
   return (
