@@ -19,6 +19,7 @@
     "react-native-image-slider-box": "^1.1.8",
     "react-native-material-design": "^0.3.5",
     "react-native-modal": "^13.0.0",
+    "react-native-popup-menu": "^0.15.11",
     "react-native-scroll-into-view": "^2.0.1",
     "react-native-size-matters": "^0.4.0",
     "react-native-timed-slideshow": "^1.2.1",
