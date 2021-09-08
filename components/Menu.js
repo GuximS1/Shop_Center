@@ -12,7 +12,7 @@ import {
 const Menu = () => {
     return (
         <View style={{ flex: 1, position: 'absolute', borderWidth: 5 }}>
-            <Text>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Text>
+            <Text>!!</Text>
         </View>
     );
 }
