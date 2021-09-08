@@ -9,6 +9,7 @@ import {
 import Body from './components/Body';
 import Header from './components/Header';
 import { CardEcomOne } from 'react-native-card-ui';
+
 const App = () => {
   return (
     <ScrollView style={{ backgroundColor: 'white' }}>
