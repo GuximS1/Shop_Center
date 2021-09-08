@@ -23,6 +23,7 @@ const Body = () => {
         require('../images/Watches3.jpg')]
     return (
         <View style={{ marginTop: '10%' }}>
+            <Text style={{ fontWeight: 'bold', fontSize: 20, textAlign: 'center', color: '#FF0000', fontWeight: 'bold', backgroundColor: '#CCF1FF' }}>BIG SALES!!</Text>
             <SliderBox images={myState} activeOpacity={1} />
             <Text style={{ fontWeight: 'bold', fontSize: 20, marginLeft: '5%', marginTop: '8%', color: '#3d3d3d' }}>The most interesting</Text>
             <View style={{ marginTop: '15%', flex: 1, flexDirection: 'row', }}>
