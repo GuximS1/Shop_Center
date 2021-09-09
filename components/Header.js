@@ -39,15 +39,15 @@ const Header = () => {
                 <Image source={require('../images/Shop_logo.png')} style={{ width: 35, height: 25, marginLeft: 10, }} />
                 <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#3d3d3d', marginLeft: 5 }}>SHOP</Text>
                 <TouchableOpacity style={{ width: 23, marginLeft: '31%', height: 30 }} onPress={() => { Alert.alert("You pressed the notifications!") }}>
-                    <FontAwesome5 name="bell" size={25} color={'#3d3d3d'} >
+                    <FontAwesome5 name="bell" size={25} color={'#FC9797'} >
                     </FontAwesome5>
                 </TouchableOpacity>
                 <TouchableOpacity style={{ width: 26, marginLeft: '6%', height: 30 }} onPress={() => { Alert.alert("You pressed the sign in!") }}>
-                    <FontAwesome5 name="user" size={25} color={'#3d3d3d'} >
+                    <FontAwesome5 name="user" size={25} color={'#59DEFF'} >
                     </FontAwesome5>
                 </TouchableOpacity>
                 <TouchableOpacity style={{ width: 30, marginLeft: '4%', height: 30 }} onPress={() => { Alert.alert("You pressed the My orders!") }}>
-                    <FontAwesome5 name="shopify" size={25} color={'#3d3d3d'} >
+                    <FontAwesome5  name="shopify" size={25} color={'#A5FF3D'} >
                     </FontAwesome5>
                 </TouchableOpacity>
             </View >
