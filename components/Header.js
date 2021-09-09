@@ -15,15 +15,16 @@ import SearchBar from "react-native-dynamic-search-bar";
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Menu from './Menu';
 import { ListItem, Icon } from 'react-native-elements'
-import Notifications from './Notifications';
-import { NavigationContainer } from '@react-navigation/native';
-import { Root, Toast } from 'react-native-popup-confirm-toast'
+import CustomisableAlert from "react-native-customisable-alert";
+import { showAlert, closeAlert } from "react-native-customisable-alert";
+import { transform } from '@babel/core';
 const Header = () => {
     const [isModalVisible, setModalVisible] = useState(false);
 
     const toggleModal = () => {
         setModalVisible(!isModalVisible);
     };
+    
     return (
         <View style={{ marginTop: '5%', flex: 1, flexDirection: 'column' }}>
             <View style={{ flex: 1, flexDirection: 'row', marginLeft: "3%" }}>
@@ -41,20 +42,31 @@ const Header = () => {
                 </Modal>
                 <Image source={require('../images/Shop_logo.png')} style={{ width: 35, height: 25, marginLeft: 10, }} />
                 <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#3d3d3d', marginLeft: 5 }}>SHOP</Text>
-                <TouchableOpacity style={{ width: 23, marginLeft: '31%', height: 30 }}  onPress={() => 
-                      Toast.show({
-                        title: 'Attention!',
-                        text: 'In honor of launching our app, all the items are up to 50% on sale. HURRY UP AND GET YOUR STUFF :)',
-                        color: '#702c91',
-                        timeColor: '#440f5f',
-                        timing: 5000,
-                        icon: <Icon name={'check'} color={'#fff'} size={31}/>,
-                        position: 'bottom',
-                    })
-                } >
+                <TouchableOpacity style={{ width: 23, marginLeft: '31%', height: 30 }}  onPress={() => {
+                        showAlert({
+                            customAlert:true,
+                            animationIn:'wobble',
+                            message:'In honor of launching the app, ShopCenter will sell all his products in 50% of the original price.',
+                            title:'PROMOTION',
+                            alertType:'success',
+                            dismissable:true,
+                            leftBtnLabel:'Cancel',
+                            animationOut:'zoomOut',
+                            
+                        });
+                    }}>
                     <FontAwesome5 name="bell" size={25} color={'#FC9797'} >
                     </FontAwesome5>
                 </TouchableOpacity>
+                <View style={{ flex: 1 }}>
+                  <CustomisableAlert
+                    titleStyle={{
+                        fontSize: 18,
+                        fontWeight: "bold"
+                    }}
+                    textStyle={{fontSize:15,letterSpacing:2}}
+                  />
+                 </View>
                 <TouchableOpacity style={{ width: 26, marginLeft: '6%', height: 30 }} onPress={() => { Alert.alert("You pressed the sign in!") }}>
                     <FontAwesome5 name="user" size={25} color={'#59DEFF'} >
                     </FontAwesome5>
