@@ -67,11 +67,11 @@ const Header = () => {
                     textStyle={{fontSize:15,letterSpacing:2}}
                   />
                  </View>
-                <TouchableOpacity style={{ width: 26, marginLeft: '6%', height: 30 }} onPress={() => { Alert.alert("You pressed the sign in!") }}>
+                <TouchableOpacity style={{ width: 26, marginLeft: '7%', height: 30 }} onPress={() => { Alert.alert("You pressed the sign in!") }}>
                     <FontAwesome5 name="user" size={25} color={'#59DEFF'} >
                     </FontAwesome5>
                 </TouchableOpacity>
-                <TouchableOpacity style={{ width: 30, marginLeft: '4%', height: 30 }} onPress={() => { Alert.alert("You pressed the My orders!") }}>
+                <TouchableOpacity style={{ width: 30, marginLeft: '6%', height: 30 }} onPress={() => { Alert.alert("You pressed the My orders!") }}>
                     <FontAwesome5  name="shopify" size={25} color={'#A5FF3D'} >
                     </FontAwesome5>
                 </TouchableOpacity>
