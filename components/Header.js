@@ -13,7 +13,8 @@ import {
 import Modal from "react-native-modal";
 import SearchBar from "react-native-dynamic-search-bar";
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
+import Menu from './Menu';
+import { ListItem, Icon } from 'react-native-elements'
 const Header = () => {
     const [isModalVisible, setModalVisible] = useState(false);
 
@@ -27,9 +28,12 @@ const Header = () => {
                     <FontAwesome5 name="bars" size={25} color={'#3d3d3d'} >
                     </FontAwesome5>
                 </TouchableOpacity>
-                <Modal isVisible={isModalVisible}>
-                    <View style={{ flex: 1 }}>
-                        <Button title="Hide modal" onPress={toggleModal} />
+                <Modal isVisible={isModalVisible} style={{ marginLeft: 0, marginTop: 0 }}>
+                    <View style={{ flex: 1, }}>
+                        <Menu />
+                        <TouchableOpacity onPress={toggleModal} style={{ width: 55, height: 58,alignSelf:'center'}}>
+                            <Icon name={"close-circle"} type={"ionicon"} color={"white"} size={60} style={{right:2,bottom:5}}/>
+                        </TouchableOpacity>
                     </View>
                 </Modal>
                 <Image source={require('../images/Shop_logo.png')} style={{ width: 35, height: 25, marginLeft: 10, }} />
