@@ -81,8 +81,9 @@ const Header = () => {
                 placeholder="Search"
                 style={{ marginTop: '2%', width: '92%', height: 55, backgroundColor: '#CECECE', }}
             //https://www.npmjs.com/package/react-native-dynamic-search-bar
+            //https://www.youtube.com/watch?v=R39sa1RQyI8&ab_channel=UnsureProgrammer send items to shop cart
             />
-
+ 
         </View>
     );
 }
